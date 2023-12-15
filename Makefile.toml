@@ -1,0 +1,20 @@
+[tasks.styles]
+command = "./tailwindcss"
+args = [
+  "-m",
+  "-c",
+  "tailwind.config.js",
+  "-i",
+  "static/input.css",
+  "-o",
+  "static/styles.css",
+  "-w",
+
+]
+
+[tasks.server]
+command = "cargo"
+args = ["watch", "-x", "r"]
+
+[tasks.watch]
+run_task = { name = ["server", "styles"], parallel = true }
