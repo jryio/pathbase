@@ -1,6 +1,6 @@
 use maud::{html, Markup, DOCTYPE};
 
-static TITLE: &str = "Social Saver";
+static TITLE: &str = "Pathbase";
 static CHARSET: &str = "utf-8";
 static STYLESHEET: &str = "stylesheet";
 static STYLES: &str = "assets/styles.css";

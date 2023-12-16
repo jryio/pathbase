@@ -12,7 +12,7 @@ async fn root() -> Markup {
         None,
         html! {
             h1 {
-                "Welcome to Social Saver"
+                "Welcome to Pathbase"
             }
         },
     )
@@ -22,7 +22,7 @@ async fn main() {
     tracing_subscriber::registry()
         .with(
             tracing_subscriber::EnvFilter::try_from_default_env()
-                .unwrap_or_else(|_| "rolo=debug,tower_http=debug".into()),
+                .unwrap_or_else(|_| "pathbase=debug,tower_http=debug".into()),
         )
         .with(tracing_subscriber::fmt::layer())
         .init();
